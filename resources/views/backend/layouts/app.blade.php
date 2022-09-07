@@ -76,22 +76,9 @@
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="dist/js/pages/dashboard2.js"></script>
     <canvas id="myChart" width="400" height="400"></canvas>
-
-    <!-- <script>
-        export default {
-            data() {
-                return {
-                    carrentDate: new Date,
-
-                }
-
-            }
-
-        } -->
     </script>
 
     <script>
-
         $(function() {
 
             var ctx = document.getElementById("myChart").getContext('2d');
@@ -100,10 +87,10 @@
                 type: 'bar',
                 data: {
 
-                    labels: ['Add To Card','Purchases','Visits','Sent Inquries'],
+                    labels: ['Add To Card', 'Purchases', 'Visits', 'Sent Inquries'],
                     datasets: [{
                         label: 'Stats',
-                        data: [<?php echo($sum_add_prod_to_card); ?>, <?php echo($complete_purchase); ?>, <?php echo($visit_prem_page); ?>,<?php echo($send_inquiries); ?>],
+                        data: [<?php echo ($sum_add_prod_to_card); ?>, <?php echo ($complete_purchase); ?>, <?php echo ($visit_prem_page); ?>, <?php echo ($send_inquiries); ?>],
                         backgroundColor: [
                             'rgba(0, 128, 255, 0.5)',
                             'rgba(255, 51, 51, 0.5)',
