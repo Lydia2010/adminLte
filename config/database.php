@@ -48,7 +48,7 @@ return [
             'driver' => 'mysql',
             'url' => env('CLEARDB_DATABASE_URL'),
             'host' => 'us-cdbr-east-06.cleardb.net',//$DATABASE_URL['host'],
-            'port' => $DATABASE_URL['port'],
+            'port' => '3306',//$DATABASE_URL['port'],
             'database' => ltrim($DATABASE_URL['path'], "/"),
             'username' => 'baa5d2a47e610a', //$DATABASE_URL['user'],
             'password' => '8e1932fd',//$DATABASE_URL['pass'],
