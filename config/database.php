@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 
-$DATABASEURL=parse_url('DATABASE_URL');
+$DATABASE_URL=parse_url('CLEARDB_DATABASE_URL');
 return [
 
     /*
@@ -49,7 +49,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => $DATABASE_URL['host'],
             'port' => $DATABASE_URL['port'],
-            'database' => Ltrim($DATABASE_URL['path'], "/"),
+            'database' => ltrim($DATABASE_URL['path'], "/"),
             'username' => $DATABASE_URL['user'],
             'password' => $DATABASE_URL['pass'],
             'unix_socket' => env('DB_SOCKET', ''),
